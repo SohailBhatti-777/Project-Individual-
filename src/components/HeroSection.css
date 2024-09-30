@@ -1,0 +1,207 @@
+.hero-section {
+  background: url('/public/highschool4.jpg') no-repeat center center/cover;
+  /* position: absolute; */
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* color: white; */
+  text-align: center;
+}
+
+.hero-content h1 {
+  /* <img src="./"; */
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.read-more {
+  border: 2px solid #006241;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.read-more:hover {
+  background-color: #006241;
+  color: #fff;
+}
+@media(max-width:1600px) and (min-width: 1200px){
+  .hero-content h1{
+    font-size: 20px;
+}
+.hero-content h3{
+    font-size: 25px;
+    font-weight: 600;
+}
+.hero-content p{
+    font-size: 26px;
+}
+.main-button{
+    font-size: 15px;
+    padding: 10px 15px;
+}
+.hero{
+    background-size: 650px;
+}
+}
+@media(max-width:1200px) and (min-width: 1000px){
+  .hero-content h3{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.hero-content h1{
+    font-size: 1.3rem;
+}
+.hero-content p{
+    font-size: 1.3rem;
+}
+.hero{
+    background-size: 600px;
+}
+}
+@media (max-width:999px) and (min-width: 801px){
+  .hero-content h3{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.hero-content h1{
+    font-size: 1.3rem;
+}
+.hero-content p{
+    font-size: 1.3rem;
+}
+.hero{
+    background-size: 700px;
+    align-items: start;
+    margin-top: 100px;
+    background-position-y: bottom;
+}
+}
+@media (max-width:800px) and (min-width: 751px){
+  .hero-content h3{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.hero-content h1{
+    font-size: 1.3rem;
+}
+.hero-content p{
+    font-size: 1.3rem;
+}
+.hero{
+    background-size: 700px;
+    align-items: start;
+    margin-top: 60px;
+    background-position-y: bottom;
+}
+}
+@media(max-width:750px){
+  .hero-content h3{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.hero-content h1{
+    font-size: 1.3rem;
+}
+.hero-content p{
+    font-size: 1.3rem;
+}
+.hero{
+    background-size: 700px;
+    align-items: start;
+    margin-top: 100px;
+    background-position-y: bottom;
+}
+}
+@media(max-width:500px) and (min-width: 408px){
+  .hero-content{
+    padding-left: 20px;
+}
+.hero-content h3{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.hero-content h1{
+    font-size: 1.3rem;
+}
+.hero-content p{
+    font-size: 1.3rem;
+}
+.hero{
+    background-size: 700px;
+    align-items: start;
+    margin-top: 70px;
+    background-position-y: bottom;
+    background-position-x: center;
+}
+.hero h3{
+    font-size: 1.5rem;
+}
+.main-button{
+    padding: 10px 15px 10px 15px ;
+}
+}
+@media(max-width:407px) and (min-width: 377px){
+  .hero-content{
+    padding-left: 20px;
+}
+.hero-content h3{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.hero-content h1{
+    font-size: 1.3rem;
+}
+.hero-content p{
+    font-size: 1.3rem;
+}
+.hero{
+    background-size: 600px;
+    align-items: start;
+    margin-top: 70px;
+    background-position-y: bottom;
+    background-position-x: center;
+}
+.hero h3{
+    font-size: 1.5rem;
+}
+.main-button{
+    padding: 10px 15px 10px 15px ;
+}
+}
+@media(max-width:376px){
+  .hero-content{
+    padding-left: 20px;
+}
+.hero-content h3{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.hero-content h1{
+    font-size: 1.3rem;
+}
+.hero-content p{
+    font-size: 1.3rem;
+}
+.hero{
+    background-size: 600px;
+    align-items: start;
+    margin-top: 70px;
+    background-position-y: bottom;
+    background-position-x: center;
+}
+.hero h3{
+    font-size: 1.5rem;
+}
+.main-button{
+    padding: 10px 15px 10px 15px ;
+}
+}

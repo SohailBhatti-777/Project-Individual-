@@ -1,0 +1,54 @@
+.navbar {
+  /* position: relative; */
+  /* opacity: 0.9; */
+  height: 80px;
+  display: flex;
+  /* background-color: transparent;  */
+  background-color: gray;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  font-size: 1.3rem;
+  border-bottom: 1px solid white; 
+}
+
+.logo {
+  font-size: 24px;
+  color: #00c853;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  margin-right: 20px;
+  cursor: pointer;
+}
+@media(max-width:1600px) and (min-width: 1200px){
+
+}
+@media(max-width:1200px) and (min-width: 1000px){
+
+}
+@media (max-width:999px) and (min-width: 801px){
+
+}
+@media (max-width:800px) and (min-width: 751px){
+
+}
+@media(max-width:750px){
+
+}
+@media(max-width:500px) and (min-width: 408px){
+
+}
+@media(max-width:407px) and (min-width: 377px){
+
+}
+@media(max-width:376px){
+    
+}

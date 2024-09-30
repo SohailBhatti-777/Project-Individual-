@@ -1,0 +1,84 @@
+.sponcer{
+    background-color: #e7d7c2;
+}
+
+.logo-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1310px;
+    margin: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.logo-container a{
+    font-size: 2.4rem;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+.logo-container a:hover{
+    color: #006241;
+    transition: all .42s ease;
+    transform: scale(1.1);
+}
+.logo-container i{
+    font-size: 2.5rem;
+    vertical-align: -5px;
+}
+@media(max-width:1600px) and (min-width: 1200px){
+    .logo-container{
+        padding: 0px 25px 0px 25px;
+    }
+}
+@media(max-width:1200px) and (min-width: 1000px){
+    .logo-container{
+        padding: 0px 22px 0px 22px;
+    }
+}
+@media (max-width:999px) and (min-width: 801px){
+    .logo-container{
+        padding: 0px 30px 0px 30px;
+    }
+}
+@media (max-width:800px) and (min-width: 751px){
+    .logo-container{
+        padding: 0px 30px 0px 30px;
+    }
+}
+@media(max-width:750px){
+    .logo-container{
+        padding: 0px 30px 0px 30px;
+    }
+}
+@media(max-width:500px) and (min-width: 408px){
+    .logo-container{
+        padding: 80px 30px 60px 30px;
+        flex-direction: column;
+        margin: 0;
+    }
+    .logo-container a{
+        margin-bottom: 20px;
+    }
+}
+@media(max-width:407px) and (min-width: 377px){
+    .logo-container{
+        padding: 80px 30px 60px 30px;
+        flex-direction: column;
+        margin: 0;
+    }
+    .logo-container a{
+        margin-bottom: 20px;
+    }
+}
+@media(max-width:376px){
+    .logo-container{
+        padding: 80px 30px 60px 30px;
+        flex-direction: column;
+        margin: 0;
+    }
+    .logo-container a{
+        margin-bottom: 20px;
+    }
+}

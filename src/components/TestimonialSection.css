@@ -1,0 +1,431 @@
+.testimonial-sliders {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1355px;
+    margin: 0 auto;
+    position: relative;
+    height: 40vh;
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+.testimonials {
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.images {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    border-radius: 50%;
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-top: 30px;
+}
+.testimonial1,
+.testimonial2,
+.testimonial3{
+    border-radius: 50%;
+    margin-right: 40px;
+    height: 100px;
+}
+.texts {
+    display: flex;
+    flex-direction: column;  
+    text-align: left;
+    max-width: 600px; 
+}
+
+.testimonial {
+    display: none; 
+    transition: all 0.42s ease;
+}
+
+.testimonial.active {
+    display: block; 
+    opacity: 1; 
+}
+
+.testimonial img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    transition: opacity 0.3s ease; 
+}
+
+.images img {
+    opacity: 0.5; 
+}
+
+#testimonial1:checked ~ .container .images .testimonial1,
+#testimonial2:checked ~ .container .images .testimonial2,
+#testimonial3:checked ~ .container .images .testimonial3 {
+    opacity: 1; 
+}
+
+
+
+#testimonial1:checked ~ .container .texts .testimonial1,
+#testimonial2:checked ~ .container .texts .testimonial2,
+#testimonial3:checked ~ .container .texts .testimonial3 {
+    display: block; 
+}
+
+.testimonial p {
+    font-size: 16px;
+    line-height: 1.8;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: black;
+}
+
+.testimonial h4 {
+    color: #006241;
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.testimonial h4 span {
+    color: #555;
+    font-size: 18px;
+    font-weight: 500;
+    font-style: oblique;
+    margin-left: 15px;
+}
+/* Basic styling for the radio buttons */
+input[type="radio"] {
+    appearance: none;  
+    border: 2px solid #ccc; 
+    border-radius: 50%; 
+    width: 15px; 
+    height: 15px; 
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    left: 268px;
+    top: 280px;
+}
+
+/* Style for the unchecked radio button */
+input[type="radio"]:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #fff; 
+}
+
+/* Style for the checked radio button */
+input[type="radio"]:checked:before {
+    background-color: #006241; 
+}
+input[type="radio"]:checked {
+    border-color: #006241; 
+}
+#testimonial1{
+    margin-left: 10px;
+}
+#testimonial2{
+    margin-left: 40px;
+}
+#testimonial3{
+    margin-left: 70px;
+}
+.texts i{
+    position: absolute;
+    right: 260px;
+    top: 255px;
+    font-size: 3rem;
+    color: #006241;
+}
+@media(max-width:1600px) and (min-width: 1200px){
+    .texts p{
+        font-size: 1.2rem;
+    }
+    .texts i{
+        right: 100px;
+        top: 200px;
+        font-size: 2.8rem;
+    }
+}
+@media(max-width:1200px) and (min-width: 1000px){
+    .texts p {
+        font-size: 1.2rem;
+    }
+    .texts h4 {
+        font-size: 1rem;
+    }
+    #s1 {
+        font-size: 0.9rem;
+    }
+    .images{
+        margin-left: 0;
+    }
+    .texts i{
+        right: 100px;
+        top: 220px;
+        font-size: 2.4rem;
+    }
+}
+@media (max-width:999px) and (min-width: 801px){
+    .testimonials{
+        flex-direction: column;
+        padding: 60px 0px 100px 0px;
+        max-width: 100%;
+    }
+    .texts,
+    .images {
+        width: 100%; /* Make them full width */
+        margin: 0;
+    }
+    .images{
+        margin-left: 250px;
+        margin-bottom: 20px;
+        position: relative;
+    }
+    .texts{
+        align-items: center;
+        text-align: center;
+    }
+    .texts p{
+        font-size: 1.2rem;
+    }
+    .texts i{
+        right: 230px;
+    }
+    #testimonial1, #testimonial2, #testimonial3{
+        position: absolute;
+        top: 300px;
+        left: 420px;
+    }
+}
+@media (max-width:800px) and (min-width: 751px){
+    .testimonials{
+        flex-direction: column;
+        padding: 60px 0px 100px 0px;
+        max-width: 100%;
+    }
+    .texts,
+    .images {
+        width: 100%; /* Make them full width */
+        margin: 0;
+    }
+    .images{
+        margin-left: 150px;
+        margin-bottom: 20px;
+        position: relative;
+    }
+    .texts{
+        align-items: center;
+        text-align: center;
+    }
+    .texts p{
+        font-size: 1.2rem;
+    }
+    .texts i{
+        right: 240px;
+        top: 225px;
+        font-size: 2.1rem;
+    }
+    .texts h4{
+        display: flex;
+        font-size: 1rem;
+        padding-left: 150px;
+    }
+    .texts h4 span{
+        font-size: 1rem;
+    }
+    #testimonial1, #testimonial2, #testimonial3{
+        position: absolute;
+        top: 300px;
+        left: 345px;
+    }
+}
+@media(max-width:750px){
+    .testimonials{
+        flex-direction: column;
+        padding: 60px 0px 100px 0px;
+        max-width: 100%;
+    }
+    .texts,
+    .images {
+        width: 100%; /* Make them full width */
+        margin: 0;
+    }
+    .images{
+        margin-left: 60px;
+        margin-bottom: 20px;
+        position: relative;
+    }
+    .texts{
+        align-items: center;
+        text-align: center;
+    }
+    .texts h4{
+        font-size: 1rem
+    }
+    .texts h4 span{
+        font-size: 1rem
+    }
+    .texts p{
+        font-size: 1.2rem;
+    }
+    .texts i{
+        right: 170px;
+        top: 240px;
+        font-size: 2.3rem;
+    }
+    #testimonial1, #testimonial2, #testimonial3{
+        position: absolute;
+        top: 300px;
+        left: 320px;
+    }
+}
+@media(max-width:500px) and (min-width: 408px){
+    .testimonials{
+        flex-direction: column;
+        padding: 60px 0px 100px 0px;
+        max-width: 100%;
+    }
+    .texts,
+    .images {
+        width: 100%; /* Make them full width */
+        margin: 0;
+    }
+    .images{
+        margin-left: 50px;
+        margin-bottom: 20px;
+        position: relative;
+    }
+    .texts{
+        align-items: center;
+        text-align: center;
+    }
+    .texts h4{
+        font-size: 1rem;
+        /* padding-left: 50px; */
+    }
+    .texts h4 span{
+        font-size: 1rem
+    }
+    .texts p{
+        font-size: 1.2rem;
+        padding-left: 50px;
+    }
+    .texts i{
+        right: 65px;
+        top: 256px;
+        font-size: 2.3rem;
+    }
+    #testimonial1, #testimonial2, #testimonial3{
+        position: absolute;
+        top: 300px;
+        left: 205px;
+        margin-top: 20px;
+    }
+}
+@media(max-width:407px) and (min-width: 377px){
+    .testimonials{
+        flex-direction: column;
+        padding: 60px 0px 100px 0px;
+        max-width: 100%;
+    }
+    .texts,
+    .images {
+        width: 100%; /* Make them full width */
+        margin: 0;
+    }
+    .images{
+        margin-left: 20px;
+        margin-bottom: 20px;
+        position: relative;
+    }
+    .texts{
+        align-items: center;
+        text-align: center;
+    }
+    .texts h4{
+        display: flex;
+        font-size: 1rem;
+        flex-direction: column;
+        padding-left: 50px;
+    }
+    .texts h4 span{
+        font-size: 1rem;
+        margin: 0;
+    }
+    .texts p{
+        font-size: 1.2rem;
+        padding-left: 50px;
+    }
+    .texts i{
+        right: 182px;
+        top: 335px;
+        font-size: 2rem;
+    }
+    #testimonial1, #testimonial2, #testimonial3{
+        position: absolute;
+        top: 300px;
+        left: 160px;
+        margin-top: 90px;
+    }
+}
+@media(max-width:376px){
+    .testimonials{
+        flex-direction: column;
+        padding: 60px 0px 100px 0px;
+        max-width: 100%;
+    }
+    .texts,
+    .images {
+        width: 100%; /* Make them full width */
+        margin: 0;
+    }
+    .images{
+        margin-left: 20px;
+        margin-bottom: 20px;
+        position: relative;
+    }
+    .texts{
+        align-items: center;
+        text-align: center;
+    }
+    .texts h4{
+        display: flex;
+        font-size: 1rem;
+        flex-direction: column;
+        padding-left: 50px;
+    }
+    .texts h4 span{
+        font-size: 1rem;
+        margin: 0;
+    }
+    .texts p{
+        font-size: 1.2rem;
+        padding-left: 50px;
+    }
+    .texts i{
+        right: 172px;
+        top: 355px;
+        font-size: 2rem;
+    }
+    #testimonial1, #testimonial2, #testimonial3{
+        position: absolute;
+        top: 320px;
+        left: 140px;
+        margin-top: 90px;
+    }
+}
